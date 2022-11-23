@@ -29,7 +29,7 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       volumes:
       - name: test-secret
-     	secret:
+        secret:
           secretName: test-secret
       containers:
         - name: {{ .Chart.Name }}
